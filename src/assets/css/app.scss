@@ -1,0 +1,20 @@
+#root,
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  background-color: #edeff2;
+}
+.cj-btn {
+  width: 133px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  color: #444444;
+}
+.cj-btn--search {
+  @extend .cj-btn;
+  background: linear-gradient(90deg, #0027b1 -12.41%, #5b7bec 130.83%);
+  color: #fff;
+}

@@ -1,0 +1,123 @@
+$main-color: #1f3995 !important;
+$white-color: #fff;
+$gray-color: #f5f5f5;
+
+.app {
+  //head
+  .app-header {
+    background-color: $main-color;
+    font-size: 1.6rem;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white-color;
+        }
+      }
+    }
+
+    .header__brand {
+      @include box(200px, 55px);
+      @include flex-center-column();
+      color: $white-color;
+      font-size: 1.8rem;
+    }
+
+    .menu-top {
+      li {
+        width: 110px;
+        @include flex-center-column;
+        height: 55px;
+        transition: 0.3s all ease-in;
+        font-weight: 300;
+        &:hover {
+          border-radius: 5px 5px 0 0;
+          background: $white-color;
+          a {
+            color: $main-color;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  //body
+  .app-body {
+    font-size: 1.4rem;
+    // width: 100vw;
+
+    &__main {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .sidebar {
+      box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.1);
+      background-color: $white-color;
+
+      .nav-link.active {
+        color: $white-color;
+        background: #1f3995;
+      }
+
+      .nav-link {
+        color: #000;
+        &:hover {
+          color: $white-color;
+          background: #1f3995;
+        }
+      }
+
+      .nav-dropdown {
+        > a.nav-link {
+          font-size: 1.6rem;
+        }
+      }
+
+      .nav-dropdown.open {
+        background-color: $white-color;
+
+        ul {
+          background-color: $gray-color;
+        }
+      }
+    }
+
+    //main
+    .main {
+    }
+  }
+}
+
+// element
+.form-search {
+  &__action {
+    @include flex-center-vert();
+    a {
+      color: $main-color;
+      text-decoration: underline !important;
+      cursor: pointer;
+      @include font14();
+    }
+  }
+  background-color: $white-color;
+  padding: 2rem;
+
+  label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .row {
+    margin-right: -10px;
+    margin-left: -10px;
+    [class*="col"] {
+      padding: 0 10px;
+    }
+  }
+
+  input {
+    height: 40px;
+  }
+}

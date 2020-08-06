@@ -1,0 +1,48 @@
+.new-table {
+    background-color: #fff;
+
+    .rt-th {
+        background: #dbdbdb;
+        padding: 1.7rem 2rem;
+        @include font14();
+        font-weight: 500;
+        color: #000;
+        white-space: nowrap;
+    }
+
+    .rt-tr {
+        display: flex;
+    }
+
+    .rt-td,
+    .rt-th {
+        border-right: 1px solid #c4c4c4;
+    }
+
+    .rt-td {
+        padding: 1.5rem 2rem;
+        @include flex-center-vert();
+        border-bottom: 1px solid #c4c4c4;
+
+        img {
+            width: 75px;
+        }
+    }
+}
+
+// pagination
+.Table__pagination {
+    @extend .mt-40;
+    @include flex-center();
+    .Table__pageButton {
+        color: $white-color;
+        @include box(30px, 30px);
+    }
+    .Table__pageButton--active {
+        background-color: $main-color;
+    }
+    .Table__nextPageWrapper,
+    .Table__prevPageWrapper {
+        outline: none;
+    }
+}

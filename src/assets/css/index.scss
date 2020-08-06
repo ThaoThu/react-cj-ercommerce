@@ -1,0 +1,16 @@
+// @import "~@coreui/icons/css/coreui-icons.css";
+@import "~@coreui/coreui/scss/coreui.scss";
+@import "~@coreui/coreui/scss/_dropdown-menu-right.scss";
+@import "~flag-icon-css/css/flag-icon.min.css";
+// @import "~font-awesome/css/font-awesome.min.css";
+@import "~simple-line-icons/css/simple-line-icons.css";
+
+@import "./scss/mixin.scss";
+@import "./scss/atomic.scss";
+
+@import "./app.scss";
+@import "./scss/pages/login.scss";
+@import "./layout.scss";
+@import "./scss/pages/category.scss";
+
+@import "./scss/components/customtable.scss";
